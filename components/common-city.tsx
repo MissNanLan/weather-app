@@ -23,7 +23,7 @@ export default function CommonCity({
   cities = COMMON_CITIES 
 }: CommonCityProps) {
   return (
-    <div className={`mt-4 ${className}`}>
+    <div className={`mt-4 ${className} text-black`}>
       <h3 className="text-lg font-medium mb-2">常用城市</h3>
       <div className="grid grid-cols-4 gap-2">
         {cities.map((city) => (

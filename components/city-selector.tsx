@@ -79,7 +79,7 @@ export default function CitySelector({
                 placeholder="输入城市名称搜索"
                 value={inputCity}
                 onChange={(e) => setInputCity(e.target.value)}
-                className="text-black"
+                className="text-black bg-white"
               />
               {inputCity && (
                 <button 
