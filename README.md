@@ -43,9 +43,15 @@ pnpm dev
 
 1. 首页默认显示当前城市的天气情况
 2. 点击左上角的城市名称可以打开城市选择界面
-3. 在城市选择界面可以搜索或从常用城市列表中选择城市
-4. 天气页面会显示当前温度、天气状况和穿衣建议
-5. 底部展示7天的天气预报，可以左右滑动查看
+  <img width="864" alt="image" src="https://github.com/user-attachments/assets/a2871e75-bd2d-46c5-ad06-18bc4b679bef" />
+
+4. 在城市选择界面可以搜索或从常用城市列表中选择城市
+   <img width="853" alt="image" src="https://github.com/user-attachments/assets/5421d212-bb0a-4027-a153-aeba880ccf06" />
+
+6. 天气页面会显示当前温度、天气状况和穿衣建议
+   <img width="851" alt="image" src="https://github.com/user-attachments/assets/eccc548b-060d-48a6-a838-344c2c929660" />
+
+8. 底部展示7天的天气预报，可以左右滑动查看
 
 ## 项目结构
 
