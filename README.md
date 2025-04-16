@@ -58,6 +58,8 @@ NEXT_PUBLIC_API_KEY=your_tianapi_key_here
 ## 使用说明
 
 ### 1. 首页默认显示当前城市的天气情况
+<img width="1501" alt="image" src="https://github.com/user-attachments/assets/eebb02f5-3c0d-474b-b504-96f467a43e09" />
+
 ### 2. 点击左上角的城市名称可以打开城市选择界面
   <img width="864" alt="image" src="https://github.com/user-attachments/assets/a2871e75-bd2d-46c5-ad06-18bc4b679bef" />
 
@@ -68,21 +70,25 @@ NEXT_PUBLIC_API_KEY=your_tianapi_key_here
    <img width="851" alt="image" src="https://github.com/user-attachments/assets/eccc548b-060d-48a6-a838-344c2c929660" />
 
 ### 5. 底部展示7天的天气预报，可以左右滑动查看
+<img width="393" alt="image" src="https://github.com/user-attachments/assets/1f79c056-5ee7-45b9-92b1-dc1dd0dc0a24" />
+
 
 ## 项目结构
 
 ```
 /app                  # Next.js应用入口
+/api
+  - weather-api.ts    # 天气API服务
 /components
   - city-selector.tsx # 城市选择组件
   - common-city.tsx   # 常用城市组件
   - weather-app.tsx   # 主天气应用组件
   - weather-icon.tsx  # 天气图标组件
   /ui                 # UI组件库
+/config
+ - index.ts           # APIKEY 配置
 /lib
-  - date-utils.ts     # 日期处理工具
   - utils.ts          # 通用工具函数
-  - weather-api.ts    # 天气API服务
 /types
   - city.ts           # 城市数据类型定义
   - weather.ts        # 天气数据类型定义
@@ -108,7 +114,6 @@ NEXT_PUBLIC_API_KEY=your_tianapi_key_here
 2. 在Vercel中导入该GitHub仓库
 3. 在Vercel项目设置中添加环境变量：
    - `NEXT_PUBLIC_API_KEY`: 您的天行API密钥
-   - `NEXT_PUBLIC_DEFAULT_CITY`: 默认显示的城市（可选）
 
 部署完成后，Vercel会自动生成一个可访问的URL。
 
