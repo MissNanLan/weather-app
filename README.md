@@ -1,6 +1,6 @@
 # 天气应用 (Weather App)
 
-一个优雅的天气应用，提供实时天气信息和未来7天的天气预报。使用天行API获取天气数据，基于Next.js和React构建。
+一个优雅的天气应用，提供实时天气信息和未来7天的天气预报。使用天行API获取天气数据，基于Next.js和React构建。 访问地址 https://weather-app-plum-three-85.vercel.app/
 
 ## 功能特点
 
@@ -41,17 +41,17 @@ pnpm dev
 
 ## 使用说明
 
-1. 首页默认显示当前城市的天气情况
-2. 点击左上角的城市名称可以打开城市选择界面
+### 1. 首页默认显示当前城市的天气情况
+### 2. 点击左上角的城市名称可以打开城市选择界面
   <img width="864" alt="image" src="https://github.com/user-attachments/assets/a2871e75-bd2d-46c5-ad06-18bc4b679bef" />
 
-4. 在城市选择界面可以搜索或从常用城市列表中选择城市
+### 3. 在城市选择界面可以搜索或从常用城市列表中选择城市
    <img width="853" alt="image" src="https://github.com/user-attachments/assets/5421d212-bb0a-4027-a153-aeba880ccf06" />
 
-6. 天气页面会显示当前温度、天气状况和穿衣建议
+### 4. 天气页面会显示当前温度、天气状况和穿衣建议
    <img width="851" alt="image" src="https://github.com/user-attachments/assets/eccc548b-060d-48a6-a838-344c2c929660" />
 
-8. 底部展示7天的天气预报，可以左右滑动查看
+### 5. 底部展示7天的天气预报，可以左右滑动查看
 
 ## 项目结构
 
@@ -82,16 +82,6 @@ const API_KEY = "your_api_key_here";
 
 您可以在[天行数据](https://www.tianapi.com/)申请获取自己的API密钥。
 
-## 贡献
 
-欢迎提交问题和贡献代码，请遵循以下步骤：
-
-1. Fork本仓库
-2. 创建您的特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 打开Pull Request
-
-## 许可证
 
 MIT
