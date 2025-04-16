@@ -1,10 +1,9 @@
 import { Area, CityLookupResponse } from "@/types/city";
 import { WeatherResponse } from "../types/weather";
+
 // 天行API key
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY 
 
-
-// 城市查询函数
 export async function searchCities(keyword: string): Promise<Area[]> {
   if (!keyword.trim()) {
     return [];
@@ -28,9 +27,6 @@ export async function searchCities(keyword: string): Promise<Area[]> {
     return [];
   }
 }
-
-
-
 
 export async function fetchWeatherData(city: string): Promise<WeatherResponse> {
   try {

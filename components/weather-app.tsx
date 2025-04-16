@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { MapPin, Clock, Shirt } from "lucide-react";
-import WeatherIcon from "./weather-icon";
-import CitySelector from "./city-selector";
-import { formatDate, getCurrentTime } from "@/lib/date-utils";
-import { fetchWeatherData } from "@/lib/weather-api";
+import { formatDate, getCurrentTime } from "@/lib/utils";
+import { fetchWeatherData } from "@/api/weather-api";
 import { WeatherResponse } from "@/types/weather";
 import { Area } from "@/types/city";
+import WeatherIcon from "./weather-icon";
+import CitySelector from "./city-selector";
 
 interface WeatherAppProps {
   defaultCity: string;

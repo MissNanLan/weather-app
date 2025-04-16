@@ -33,11 +33,27 @@ npm install
 # 或使用 pnpm
 pnpm install
 
+# 配置环境变量
+cp .env.example .env
+# 编辑.env文件，填入您的API密钥
+
 # 启动开发服务器
 npm run dev
 # 或使用 pnpm
 pnpm dev
 ```
+
+## 环境变量配置
+
+本项目使用环境变量来配置API密钥和默认城市。您可以在项目根目录创建`.env`文件（已包含在.gitignore中）：
+
+```
+# 天行API密钥
+NEXT_PUBLIC_API_KEY=your_tianapi_key_here
+
+```
+
+开发环境中的.env文件不会被提交到Git仓库，确保您的API密钥安全。对于部署环境（如Vercel），您需要在部署平台的环境变量设置中添加这些变量。
 
 ## 使用说明
 
@@ -74,14 +90,26 @@ pnpm dev
 
 ## API配置
 
-应用使用天行API获取天气数据，需要在`lib/weather-api.ts`中配置API密钥：
+应用使用天行API获取天气数据，需要在`.env`文件中配置API密钥：
 
-```typescript
-const API_KEY = "your_api_key_here";
+```
+NEXT_PUBLIC_API_KEY=your_tianapi_key_here
 ```
 
 您可以在[天行数据](https://www.tianapi.com/)申请获取自己的API密钥。
 
+## 部署
 
+本项目已部署在Vercel上，访问地址：https://weather-app-plum-three-85.vercel.app/
+
+如需部署到自己的Vercel账户：
+
+1. Fork本项目到您的GitHub账户
+2. 在Vercel中导入该GitHub仓库
+3. 在Vercel项目设置中添加环境变量：
+   - `NEXT_PUBLIC_API_KEY`: 您的天行API密钥
+   - `NEXT_PUBLIC_DEFAULT_CITY`: 默认显示的城市（可选）
+
+部署完成后，Vercel会自动生成一个可访问的URL。
 
 MIT

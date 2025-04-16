@@ -1,20 +1,43 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
-// 格式化日期 YYYY-MM-DD
-export function formatDate(date: Date): string {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
-}
-
-// 获取星期几
 export function getWeekDay(date: Date): string {
-  const weekDays = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+  const weekDays = [
+    "星期日",
+    "星期一",
+    "星期二",
+    "星期三",
+    "星期四",
+    "星期五",
+    "星期六",
+  ];
   return weekDays[date.getDay()];
+}
+
+export function formatDate(dateString: string) {
+  const date = new Date(dateString);
+
+  // Get month and day
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+
+  // Get day of week in Chinese
+  const daysOfWeek = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+  const dayOfWeek = daysOfWeek[date.getDay()];
+
+  return {
+    date: `${month}/${day}`,
+    dayOfWeek,
+  };
+}
+
+export function getCurrentTime(): string {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  return `${hours}:${minutes}`;
 }

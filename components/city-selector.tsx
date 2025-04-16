@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, Search, X, AlertCircle, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { searchCities } from "@/lib/weather-api";
+import { searchCities } from "@/api/weather-api";
 import { Area } from "@/types/city";
 import CommonCity from "./common-city";
 
