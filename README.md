@@ -1,6 +1,9 @@
 # 天气应用 (Weather App)
 
-一个优雅的天气应用，提供实时天气信息和未来7天的天气预报。使用天行API获取天气数据，基于Next.js和React构建。 访问地址 https://weather-app-plum-three-85.vercel.app/
+一个优雅的天气应用，提供实时天气信息和未来7天的天气预报。使用天行API获取天气数据，基于Next.js和React构建。 
+- 访问地址 
+https://weather-app-plum-three-85.vercel.app/
+https://weather.nanlan.online/
 
 ## 功能特点
 
