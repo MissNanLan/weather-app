@@ -146,8 +146,8 @@ export default function WeatherApp({ defaultCity }: WeatherAppProps) {
         </div>
 
         {/* 7-day 天气预报 */}
-        <div className="overflow-x-auto">
-          <div className="flex border border-blue-400">
+        <div className="overflow-x-auto border border-blue-400">
+          <div className="flex">
             {weatherData?.list.map((day, index) => (
               <div
                 key={index}

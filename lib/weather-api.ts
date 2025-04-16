@@ -1,9 +1,7 @@
 import { Area, CityLookupResponse } from "@/types/city";
 import { WeatherResponse } from "../types/weather";
-import { formatDate, getWeekDay } from "./utils";
-
 // 天行API key
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY  // 请替换为您自己的API key
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY 
 
 
 // 城市查询函数
