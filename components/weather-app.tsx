@@ -108,10 +108,13 @@ export default function WeatherApp({ defaultCity }: WeatherAppProps) {
           <div className="text-2xl mt-2">
             {currentWeather?.weather || "未知天气"}
           </div>
-          <div className="text-sm mt-2 text-left">
-            <div className="flex items-center gap-2">
-              <Shirt className="h-4 w-4" />
-              <span>{currentWeather?.tips}</span>
+    
+          <div className="w-full max-w-md mx-auto mt-4">
+            <div className="flex items-start">
+              <div className="h-5 w-5 flex-shrink-0 mt-2">
+                <Shirt className="h-5 w-5" />
+              </div>
+              <span className="text-sm sm:text-base ml-3 text-blue-50">{currentWeather?.tips}</span>
             </div>
           </div>
         </div>
